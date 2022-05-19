@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
-{% load 'crispy_forms_tags' %}
- {% block content %}
-<form action="" method="post" enctype="multipart/form-data" >
-     {% csrf_token %}
-    {{ form|crispy }}
-     <button type="submit">Save</button>
-     <button type="submit">Orqaga</button>
- </form>
+
+{% block content %}
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+    <button type="submit">B4ack</button>
+</form>
 {% endblock content %}
