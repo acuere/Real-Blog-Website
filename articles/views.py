@@ -10,31 +10,29 @@ from .models import Article
 class ArticleListView(ListView):
     model = Article
     template_name = 'article_list.html'
-    success_url = reverse_lazy('home.html')
+
 
 
 class ArticleCreateView(CreateView):
     model = Article
     template_name = 'article_new.html'
-    success_url = reverse_lazy('home.html')
-
+    fields = '__all__'
+    success_url = reverse_lazy('article_list.html')
 
 
 class ArticleUpdateView(UpdateView):
     model = Article
     template_name = 'article_edit.html'
-    fields = ['title','summary','body','pictue']
-    success_url = reverse_lazy('home.html')
-
+    fields = ['title', 'summary', 'body', 'picture']
+    success_url = reverse_lazy('article_list')
 
 
 class ArticleDetailView(DetailView):
     model = Article
     template_name = 'article_detail.html'
-    success_url = reverse_lazy('home.html')
 
 
 class ArticleDeleteView(DeleteView):
     model = Article
     template_name = 'article_delete.html'
-    success_url = reverse_lazy('home.html')
+    success_url = reverse_lazy('article_list')

@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
-
+{% load crispy_forms_tags %}
 {% block content %}
 <form action="" method="post" enctype="multipart/form-data">
     {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Save</button>
-    <button type="submit">B4ack</button>
+    {{ form|crispy }}
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a class="btn btn-outline-primary" href="{% url 'article_list' %}" role="button">Bosh sahifa</a>
 </form>
 {% endblock content %}

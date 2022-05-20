@@ -9,7 +9,7 @@
             <div class="card-header">
                 <span class="font-weight-bold"><a href="{% url 'article_detail' article.pk  %}"><h5>{{ article.title }}</h5></a></span>
             </div>
-            {% if article.picture %}
+            {% if article.picture %}z
                 <img class="card-img-top" src="{{ article.picture.url }}" alt="{{ article.title }}">
             {%  endif %}
             <div class="card-body">
