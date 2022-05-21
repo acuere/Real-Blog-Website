@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Outer apps
     'crispy_forms',
+    'ckeditor',
+    'ckeditor_uploader',
     # my apps
     'accounts',
     'pages',
@@ -121,14 +123,16 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 STATIC_URL = '/static/'
 
-MEDIA_URL = '/media/'
-
 STATICFFILES_DIRS = [
     os.path.join(BASE_DIR, '/static/')
 ]
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# CRISPY_TEMPLATE_PACK = 'bootstrap4'
+STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+
+# Media file dirs conf
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -137,7 +141,19 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
+# login & logout conf
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
+# bootstrap conf
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# CKEditor conf
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Full',
+    },
+}
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_RESTRICT_BY_USER = True

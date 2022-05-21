@@ -4,7 +4,7 @@
 {% block content %}
     {% if user.is_authenticated %}
         {{ user.first_name }} {{ user.last_name }}
-        <a href="{% url 'logout' %} role="button" class="btn btn-outline-primary" ">Logout</a>
+        <a href="{% url 'logout' %} "button" class="btn btn-outline-primary" ">Logout</a>
 <br>
                                  <a href="{% url 'article_list' %}" role="button" class="btn btn-outline-primary">Postlarni ko'rish</a>
     {% else %}
