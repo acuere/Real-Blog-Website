@@ -19,6 +19,18 @@ class Article(models.Model):
     # def get_absolute_url(self):
     #     return reverse('article_detail', args=[str(self.id)])
 
+class Comment(models.Model):
+    name = models.CharField(max_length=50)
+    email = models.EmailField(max_length=100)
+    content = models.TextField()
+    post = models.ForeignKey(Article, on_delete=models.CASCADE)
+    created = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ('-created',)
+
+    def __str__(self):
+        return 'Comment by {}'.format(self.name)
 
 
 
