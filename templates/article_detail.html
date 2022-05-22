@@ -10,14 +10,18 @@
               <h1 class="card-title">{{ object.title }}</h1>
               <h6 class="card-subtitle mb-2 text-muted">Muallif: {{ object.author }} | {{ object.date }}</h6>
               <p class="card-text">{{ object.body | safe }}</p>
-              <a href="{% url 'article_edit' object.id %}">Tahrirlash</a> |
-              <a href="{% url 'article_delete' object.id %}">O'chirish</a> |
-              <a href="{% url 'article_list' %}">Barcha postlar</a>
+              {% if user.is_authenticated and object.author.id == user.id %}
+              <a href="{% url 'article_edit' object.id %}" role="button" class="btn btn-outline-primary">Edit</a> |
+              <a href="{% url 'article_delete' object.id %}" role="button" class="btn btn-outline-primary">Delete</a> |
+              <a href="{% url 'article_list' %}" role="button" class="btn btn-outline-primary">All News</a>
+              {% else %}
+              <a href="{% url 'article_list' %}"  role="button" class="btn btn-outline-primary">All News</a>
+              {% endif %}
           </div>
         </div>
         <p></p>
         <div class="card">
-            <div class="card-header">Izohlar</div>
+            <div class="card-header">Comments</div>
             {%  for comment in article.comments.all %}
                 <div class="card-body">
                     <blockquote class="blockquote mb-0">

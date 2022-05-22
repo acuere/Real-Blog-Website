@@ -6,12 +6,12 @@
         {{ user.first_name }} {{ user.last_name }}
         <a href="{% url 'logout' %} "button" class="btn btn-outline-primary" ">Logout</a>
 <br>
-                                 <a href="{% url 'article_list' %}" role="button" class="btn btn-outline-primary">Postlarni ko'rish</a>
+                                 <a href="{% url 'article_list' %}" role="button" class="btn btn-outline-primary">View Last News</a>
     {% else %}
-        <h2 align="center">Tizimga Kirmagansiz</h2>
+        <h2 align="center">You haven't logged in!</h2>
     <center>
-        <a href="{% url 'signup' %}" align="center">Sign Up </a> <br>
-        <a href="{% url 'login' %}" align="center">Log in</a>
+        <a href="{% url 'signup' %}" align="center" class="btn btn-primary">Sign Up </a> <br><br>
+        <a href="{% url 'login' %}" align="center" class="btn btn-primary" >Log in</a>
     </center>
     {% endif %}
 {% endblock content %}
