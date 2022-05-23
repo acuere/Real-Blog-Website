@@ -9,7 +9,7 @@ Contains:
 
   <br><br>**3. Update** and permissions, restricts  <br><a href="https://drive.google.com/uc?export=view&id=1xc-UCum-3ud0M4sihRfeGGWEDhe_Nvs9"><img src="https://drive.google.com/uc?export=view&id=1xc-UCum-3ud0M4sihRfeGGWEDhe_Nvs9" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" /> </a>
 
- <br><br> **4. Delete**and permissions, restricts  <br><a href="https://drive.google.com/uc?export=view&id=1_W29pSb4F2YjQrPgm1L6d7KPwX99dLqu"><img src="https://drive.google.com/uc?export=view&id=1_W29pSb4F2YjQrPgm1L6d7KPwX99dLqu" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" /> </a>
+ <br><br> **4. Delete**and permissions, restricts  <br><a href="https://drive.google.com/uc?export=view&id=1W29pSb4F2YjQrPgm1L6d7KPwX99dLqu"><img src="https://drive.google.com/uc?export=view&id=1_W29pSb4F2YjQrPgm1L6d7KPwX99dLqu" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" /> </a>
 
   <br><br>**5. Comment to posts** <br><a href="https://drive.google.com/uc?export=view&id=1MoY5iireR8AKWo-S1FYg4iFUAVRlkXVq"><img src="https://drive.google.com/uc?export=view&id=1MoY5iireR8AKWo-S1FYg4iFUAVRlkXVq" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" /> </a>
 
