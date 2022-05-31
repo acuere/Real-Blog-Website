@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../pdp_mashqlar/pdp_modul_4/ecommerce_Template/.idea/ecommerce_Template.iml" filepath="$PROJECT_DIR$/../../../pdp_mashqlar/pdp_modul_4/ecommerce_Template/.idea/ecommerce_Template.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/realblog.iml" filepath="$PROJECT_DIR$/.idea/realblog.iml" />
     </modules>
   </component>
